@@ -30,6 +30,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
     </flow>
     <flow name="maven-projectFlow">
         <jms:inbound-endpoint queue="flights" connector-ref="Active_MQ" doc:name="JMS"/>
+        <set-payload value="#[payload]" mimeType="application/json" doc:name="Set Payload"/>
         <logger message="***************************************************     #[payload]" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
