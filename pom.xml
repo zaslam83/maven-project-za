@@ -69,7 +69,7 @@
 					<password>${pwd}</password>
 					<workerType>Micro</workerType>
 					<redeploy>true</redeploy>
-					<environment>DEV</environment>
+					<environment>Dev</environment>
 				</configuration>
 				<executions>
 					<execution>
